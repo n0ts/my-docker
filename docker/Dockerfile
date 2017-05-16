@@ -12,7 +12,7 @@ RUN set -x \
     && apk --no-cache add \
            bash bash-completion \
            ca-certificates \
-           git openssh sudo \
+           git sudo \
            tree unzip vim wget \
 
     # add local user
