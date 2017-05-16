@@ -21,8 +21,6 @@ RUN set -x \
     && echo "%${group} ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/00-${group} \
     && chmod 400 /etc/sudoers.d/00-${group} \
 
-    && chown root:${group} /var/run/docker.sock \
-
     # create work directory
     && mkdir ${work} \
     && chown -R ${user}:${group} ${work}
