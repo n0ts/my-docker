@@ -10,6 +10,7 @@ RUN set -x \
     && apk --no-cache upgrade \
 
     && apk --no-cache add \
+           alpine-sdk \
            bash bash-completion \
            ca-certificates \
            git sudo \
