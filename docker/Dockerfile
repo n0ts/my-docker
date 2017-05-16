@@ -6,6 +6,9 @@ ENV user docker
 ENV group docker
 ENV work /work
 
+# https://github.com/docker-library/docker/blob/master/17.05/dind/dockerd-entrypoint.sh
+COPY dockerd-entrypoint.sh /usr/local/bin/
+
 RUN set -x \
     && apk --no-cache upgrade \
 
@@ -26,4 +29,5 @@ RUN set -x \
     && mkdir ${work} \
     && chown -R ${user}:${group} ${work}
 
-CMD ["/bin/bash"]
+ENTRYPOINT ["dockerd-entrypoint.sh"]
+CMD []
