@@ -7,4 +7,5 @@ RUN set -x \
     && python --version  \
     && pip --version
 
-CMD ["/bin/bash"]
+ENTRYPOINT ["dockerd-entrypoint.sh"]
+CMD []

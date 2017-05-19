@@ -6,4 +6,5 @@ RUN set -x \
     && pip install awscli aws-shell awsebcli \
     && aws --version
 
-CMD ["/bin/bash"]
+ENTRYPOINT ["dockerd-entrypoint.sh"]
+CMD []
