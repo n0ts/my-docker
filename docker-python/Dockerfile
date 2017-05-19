@@ -4,7 +4,7 @@ MAINTAINER Naoya Nakazawa <naoya.n@gmail.com>
 
 RUN set -x \
     && apk add --no-cache py-pip \
-    && python --version  \
+    && python --version \
     && pip --version
 
 ENTRYPOINT ["dockerd-entrypoint.sh"]
