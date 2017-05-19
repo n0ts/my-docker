@@ -1,4 +1,4 @@
-FROM n0ts/docker
+FROM n0ts/docker-aws
 
 MAINTAINER Naoya Nakazawa <naoya.n@gmail.com>
 
