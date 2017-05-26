@@ -6,7 +6,8 @@ RUN set -x \
     && apk --no-cache add openssh \
 
     && curl -o /usr/local/bin/circleci https://circle-downloads.s3.amazonaws.com/releases/build_agent_wrapper/circleci \
-    && chmod +x /usr/local/bin/circleci
+    && chmod +x /usr/local/bin/circleci \
+    && circleci version
 
 ENTRYPOINT ["dockerd-entrypoint.sh"]
 CMD []
