@@ -15,7 +15,7 @@ RUN set -x \
     && apk --no-cache add \
            alpine-sdk \
            bash bash-completion \
-           ca-certificates \
+           ca-certificates curl \
            git sudo \
            tree unzip vim wget \
 
