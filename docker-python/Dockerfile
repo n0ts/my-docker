@@ -4,6 +4,7 @@ MAINTAINER Naoya Nakazawa <naoya.n@gmail.com>
 
 RUN set -x \
     && apk add --no-cache py-pip \
+    && pip install jq \
     && python --version \
     && pip --version
 
